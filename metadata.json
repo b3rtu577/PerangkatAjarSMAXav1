@@ -1,0 +1,6 @@
+{
+  "name": "Generator RPM & Modul Ajar AI",
+  "description": "Aplikasi Generator Rencana Pembelajaran Mendalam (RPM), LKPD, Moodle, Asesmen, dan Rubrik Kurikulum Merdeka dengan Ekspor Microsoft Word (.docx)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

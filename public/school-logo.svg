@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" width="320" height="380">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Shield Border -->
+  <path d="M 32 40 C 80 24, 240 24, 288 40 C 304 40, 312 64, 296 96 C 296 224, 256 312, 160 368 C 64 312, 24 224, 24 96 C 8 64, 16 40, 32 40 Z"
+        fill="#ffffff" stroke="#818cf8" stroke-width="6" stroke-linejoin="round"/>
+  
+  <path d="M 38 46 C 83 32, 237 32, 282 46 C 295 47, 301 68, 288 96 C 288 216, 250 300, 160 355 C 70 300, 32 216, 32 96 C 19 68, 25 47, 38 46 Z"
+        fill="none" stroke="#6366f1" stroke-width="3"/>
+
+  <!-- Top Red Banner "PPSK" -->
+  <path d="M 44 50 L 276 50 L 256 100 L 64 100 Z" fill="url(#redGrad)" stroke="#991b1b" stroke-width="2"/>
+  <text x="160" y="86" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="4">PPSK</text>
+
+  <!-- Top Left Quadrant: Yellow (Quill Pen & Inkwell) -->
+  <path d="M 64 100 L 160 100 L 160 210 L 35 210 C 35 160, 44 125, 64 100 Z" fill="url(#yellowGrad)" stroke="#1e293b" stroke-width="2"/>
+  <g transform="translate(48, 110)">
+    <rect x="28" y="35" width="35" height="28" fill="#334155" rx="4" stroke="#0f172a" stroke-width="2"/>
+    <ellipse cx="45" cy="35" rx="17" ry="6" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/>
+    <path d="M 68 10 C 48 24, 28 45, 12 64 L 22 67 C 38 48, 58 28, 74 16 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 19 58 L 3 74 L 12 70 Z" fill="#0f172a"/>
+  </g>
+
+  <!-- Top Right Quadrant: Blue (Torch) -->
+  <path d="M 160 100 L 256 100 C 276 125, 285 160, 285 210 L 160 210 Z" fill="url(#blueGrad)" stroke="#1e293b" stroke-width="2"/>
+  <g transform="translate(172, 110)">
+    <path d="M 16 60 L 60 16" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 16 60 L 60 16" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 51 25 L 73 10 L 67 35 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 70 6 C 83 -3, 90 10, 77 20 C 70 16, 67 10, 70 6 Z" fill="#ef4444" stroke="#991b1b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bottom Left Quadrant: Blue (3 Interlocking Rings) -->
+  <path d="M 35 210 L 160 210 L 160 355 C 96 320, 51 264, 35 210 Z" fill="url(#blueGrad)" stroke="#1e293b" stroke-width="2"/>
+  <g transform="translate(48, 222)">
+    <circle cx="32" cy="28" r="21" fill="none" stroke="#ef4444" stroke-width="7"/>
+    <circle cx="54" cy="45" r="21" fill="none" stroke="#ef4444" stroke-width="7"/>
+    <circle cx="32" cy="62" r="21" fill="none" stroke="#ef4444" stroke-width="7"/>
+  </g>
+
+  <!-- Bottom Right Quadrant: Yellow (Chain) -->
+  <path d="M 160 210 L 285 210 C 269 264, 224 320, 160 355 Z" fill="url(#yellowGrad)" stroke="#1e293b" stroke-width="2"/>
+  <g transform="translate(180, 222)">
+    <rect x="16" y="12" width="42" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="6"/>
+    <rect x="16" y="12" width="42" height="26" rx="13" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <rect x="28" y="35" width="42" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="6"/>
+    <rect x="28" y="35" width="42" height="26" rx="13" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <rect x="16" y="58" width="42" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="6"/>
+    <rect x="16" y="58" width="42" height="26" rx="13" fill="none" stroke="#0f172a" stroke-width="2"/>
+  </g>
+
+  <!-- Center Circle: Red Rim, White Fill -->
+  <circle cx="160" cy="202" r="45" fill="#ffffff" stroke="#ef4444" stroke-width="6"/>
+  <circle cx="160" cy="202" r="39" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+  
+  <!-- Center Text "SMA" -->
+  <text x="160" y="206" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="26" fill="#ef4444" text-anchor="middle">SMA</text>
+
+  <!-- Text Along Curved Bottom Ring "XAVERIUS 1" -->
+  <path id="circleTextPath" d="M 122 222 A 35 35 0 0 0 198 222" fill="none"/>
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="13" fill="#dc2626" letter-spacing="1.5">
+    <textPath href="#circleTextPath" startOffset="50%" text-anchor="middle">
+      XAVERIUS 1
+    </textPath>
+  </text>
+</svg>
